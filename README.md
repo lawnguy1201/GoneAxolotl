@@ -68,15 +68,16 @@ Since The data is in a tree structure the data will be hierarchical; there is a 
 - First, make sure you have all the dependencies
 - Load the project into your ide
 - Put the lib .jar into the correct lib folder for your ide
-- Before you run the program go into ```Chunks.java``` and comment out/in what you want to look for
-  - NOTE* Automaticly the only thing the program looks for is Banners and Signs, everything else you need to comment out/in   
+- Before you run the program go into ```Chunks.java``` and comment out/in what you want to look for and go into ```FileHandling.java``` function: ```csvWriter()``` Line: ```160``` and put in the path to the folder where you want the data to go into 
+  - NOTE* Automaticly the only thing the program looks for is Banners and Signs, everything else you need to comment out/in
+  -  
 - Run the program and follow the directions in the console
   - For those who dont know what a path is read this https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/path
   - You can just hit enter if you do not want to deal with most of the things in the console 
 
 # Known Bugs
-- The console user interaction has some spelling errors
-- The console user interaction does not continue on lowercase yes or no
+-  FIXED: The console user interaction has some spelling errors
+- FIXED: The console user interaction does not continue on lowercase yes or no
   
  
 # How to Contribute 
