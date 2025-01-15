@@ -29,8 +29,34 @@ Big thanks to lamp and stalpo for some help fixing some bugs and pointing me in 
 
 # How Does the NBT System Work 
 Named Binary Tag (NBT) is a tree data structure used to store, game data from the Minecraft world. NBT data only has 13 different tag types with a number associated with them ranging from 0-12. 
-Since The data is in a tree structure the data will be hierarchical; there is a root tag at the top and all other tags atr below and branches out like root to sections... 
- ![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.minecraftforum.net%2Fforums%2Fmapping-and-modding-java-edition%2Fminecraft-tools%2F1262665-nbtexplorer-nbt-editor-for-windows-and-mac&psig=AOvVaw3pMtYarww9gBRaYwETjhE6&ust=1737050168803000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjAuaqm-IoDFQAAAAAdAAAAABAj)
+Since The data is in a tree structure the data will be hierarchical; there is a root tag at the top and all other tags atr below and branches out from root to sections... 
+ ![](https://hocuspocus.taloncrossing.com/rii/nbtexplorer_mac.png)
+
+ ## How Region Files (.mca) Broken Down to NBT
+  First, we need to understand how the Minecraft world is made. The Minecraft world is made up of an infinite amount of regions, the more you explore the more regions you create on the go. 
+   - Each region is 32x32 chunks
+   - Each Chunk is made up of 16x16 Blocks
+   - Each Chunk section is made of 16x16x16 blocks
+     - There are about 16 Chunk Sections in one chunk
+    
+  ![](https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ec/Chunk.png/revision/latest?cb=20220204013734)
+    
+  Each region file contains the same template:
+  - Name of the file
+    - The name of the file tells you the region coordinate which can be turned into X Y Z Cord System with some math and vice versa
+      - The template of the cords is ```r.x.z.mca```
+  - Header of the file
+    - The Header always is split into two parts
+    - The chunk locations within the file
+      - The first 4096 bytes (1024 entries; 4 bytes each) tell you the location of the start of the chunk in the file
+      - The second 4096 bytes  (1024 entries; 4 bytes each) are the timestamps of the chunks (so when you entered each chunk in that region)
+    - The last part of the regions is the start of all of chunks. Each chunk has their own header aswell
+      -  Bytes 0-3 is the length in bytes
+      -  Byte 4 is the compression type
+        -  Value 1 Gziped
+        -  Value 2 Zlib
+        -  Value 3 Uncompressed 
+      -  Byte 5... is the actual compressed data    
 
 # dependencies
 - Java 8+ Next update will be Java 22+
