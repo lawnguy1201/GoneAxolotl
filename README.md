@@ -30,7 +30,7 @@ Big thanks to lamp and stalpo for some help fixing some bugs and pointing me in 
 # How Does the NBT System Work 
 Named Binary Tag (NBT) is a tree data structure used to store, game data from the Minecraft world. NBT data only has 13 different tag types with a number associated with them ranging from 0-12. 
 Since The data is in a tree structure the data will be hierarchical; there is a root tag at the top and all other tags atr below and branches out like root to sections... 
-![][https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.minecraftforum.net%2Fforums%2Fmapping-and-modding-java-edition%2Fminecraft-tools%2F1262665-nbtexplorer-nbt-editor-for-windows-and-mac&psig=AOvVaw3pMtYarww9gBRaYwETjhE6&ust=1737050168803000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjAuaqm-IoDFQAAAAAdAAAAABAj]
+ ![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.minecraftforum.net%2Fforums%2Fmapping-and-modding-java-edition%2Fminecraft-tools%2F1262665-nbtexplorer-nbt-editor-for-windows-and-mac&psig=AOvVaw3pMtYarww9gBRaYwETjhE6&ust=1737050168803000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjAuaqm-IoDFQAAAAAdAAAAABAj)
 
 # dependencies
 - Java 8+ Next update will be Java 22+
