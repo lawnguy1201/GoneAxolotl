@@ -68,6 +68,8 @@ Since The data is in a tree structure the data will be hierarchical; there is a 
 - First, make sure you have all the dependencies
 - Load the project into your ide
 - Put the lib .jar into the correct lib folder for your ide
+- Before you run the program go into ```Chunks.java``` and comment out/in what you want to look for
+  - NOTE* Automatic the only thing the program looks for is Banners and Signs, everything else you need to comment out/in   
 - Run the program and follow the directions in the console
   - For those who dont know what a path is read this https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/path
  
