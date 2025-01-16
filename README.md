@@ -8,7 +8,7 @@ GoneAxolotl was made over the course of 8 months specifically for Maxdog006's 25
 
 Big thanks to lamp and stalpo for some help fixing some bugs and pointing me in the right direction.
 
-# Fetures 
+# Features 
 - Handle large amounts of region files
 - Get:
   - Block data
