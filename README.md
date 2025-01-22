@@ -25,7 +25,7 @@ Big thanks to lamp and stalpo for some help fixing some bugs and pointing me in 
   - create your own visualizer
     - Best languages ```Matlab``` and ```Python```
   - Use the ```Sightseer``` the visualizer made specially for this project
-  - https://github.com/lawnguy1201/Sightseer
+  - ![Sightseer](https://github.com/lawnguy1201/Sightseer)
 
 # How Does the NBT System Work 
 Named Binary Tag (NBT) is a tree data structure used to store, game data from the Minecraft world. NBT data only has 13 different tag types with a number associated with them ranging from 0-12. 
